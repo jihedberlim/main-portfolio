@@ -2,12 +2,12 @@
   --white: #ffffff;
   --gray: #d9d9d9;
   --black: #000000;
-  --primary-color: #02073e;
-  --secondary-color: #0f2137;
-  --dark-secondary-color: #3c415c;
-  --tertiary-color: #a6b1e1;
-  --light-tertiary-color: #f3f6fb;
-  --text-color: #343d48;
+  --primary-color: #040D12;
+  --secondary-color: #315c5c;
+  --dark-secondary-color: #0e3636;
+  --tertiary-color: #93B1A6;
+  --light-tertiary-color: #f1f1f1;
+  --text-color: #040D12;
 
   --font-family: 'Roboto', sans-serif;
 }
