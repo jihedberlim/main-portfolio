@@ -10,11 +10,21 @@ footer .footer__content {
 
 footer .footer__content ul li a i {
     font-size: 30px;
+    transition: 0.2s;
+}
+
+footer .footer__content ul li a i:hover {
+    color: var(--secondary-color);
 }
 
 footer .footer__content .footer__contact a {
     display: block;
     font-weight: 500;
+    transition: 0.2s;
+}
+
+footer .footer__content .footer__contact a:hover {
+    color: var(--secondary-color);
 }
 
 footer .footer__content ul li {

@@ -29,6 +29,11 @@
 
 .about .about__left ul li a i {
     font-size: 30px;
+    transition: 0.2s;
+}
+
+.about .about__left ul li a i:hover {
+    color: var(--secondary-color);
 }
 
 .about .about__right {
