@@ -1,9 +1,9 @@
 const navbar = document.querySelector('.navbar')
-const mobileNavbar = document.querySelector('.navbar__mobile')
+const navbarLinks = document.querySelector('.navbar__links')
 const button = document.querySelector('.burguer')
 
 button.addEventListener('click', function() {
-    mobileNavbar.classList.toggle('active')
+    navbarLinks.classList.toggle('active')
 })
 
 window.addEventListener('scroll', function() {
