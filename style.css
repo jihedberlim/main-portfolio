@@ -101,7 +101,6 @@ p:not(:last-of-type),
   padding: 0 4rem;
   margin: 0 auto;
   padding-bottom: 24rem;
-  /* margin-bottom: 26rem; */
 }
 
 .mb-0 {
@@ -253,29 +252,61 @@ header {
   margin: 0 auto 6rem;
 }
 
-.skills__content ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  margin-top: 6rem;
 }
 
-.skills__content ul li .image-container {
-  background-color: var(--white);
-  padding: 2rem;
-  border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
+.carousel__track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.4rem 1rem var(--shadow-box);
-  margin: 0 auto;
+  gap: 4rem;
+  width: max-content;
+  animation: scroll 25s linear infinite;
 }
 
-.skills__content ul li h3 {
-  font-size: 1.6rem;
+.carousel:hover .carousel__track {
+  animation-play-state: paused;
+}
+
+.carousel__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  cursor: default;
+}
+
+.carousel__item i {
+  font-size: 5rem;
+  color: #c0c0c0;
+  transition: color 0.3s ease;
+}
+
+.carousel__item:hover i {
+  color: var(--tech-color);
+}
+
+.carousel__item span {
+  font-size: 1.2rem;
   font-weight: 500;
-  margin: 2rem 0 1rem;
+  color: #c0c0c0;
+  transition: color 0.3s ease;
+}
+
+.carousel__item:hover span {
+  color: var(--primary-color);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Projects */
@@ -299,13 +330,9 @@ header {
 
 .projects ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
-}
-
-.projects__reversed-list {
-  flex-direction: row-reverse;
 }
 
 .projects ul li:not(:last-of-type) {
@@ -486,8 +513,7 @@ footer {
     scroll-margin-top: 8rem;
   }
 
-  .projects ul li,
-  .projects ul li.projects__reversed-list {
+  .projects ul li {
     flex-direction: column;
   }
 

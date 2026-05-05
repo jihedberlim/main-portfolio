@@ -2,6 +2,7 @@ const navbar = document.querySelector(".navbar");
 const navLinks = document.querySelector(".navbar__links");
 const button = document.querySelector(".burguer");
 const links = document.querySelectorAll(".navbar__links a");
+const items = document.querySelectorAll('.carousel__item')
 
 button.addEventListener("click", function () {
   navLinks.classList.toggle("active");
@@ -24,3 +25,12 @@ window.addEventListener(
   },
   { passive: true },
 );
+
+items.forEach(function(item) {
+  const icon = item.querySelector('i')
+  const color = icon.getAttribute('data-color')
+
+  item.addEventListener('mouseenter', function() {
+    item.style.setProperty('--tech-color', color)
+  })
+})
