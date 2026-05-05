@@ -501,7 +501,7 @@ footer {
 
   footer {
     padding: 5rem 0;
-    scroll-bottom-top: 8rem;
+    scroll-margin-top: 8rem;
   }
 }
 
