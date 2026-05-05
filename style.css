@@ -44,7 +44,7 @@ a {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 5.2rem;
   font-weight: 700;
   color: var(--primary-color);
 }
@@ -100,7 +100,8 @@ p:not(:last-of-type),
   max-width: 120rem;
   padding: 0 4rem;
   margin: 0 auto;
-  margin-bottom: 26rem;
+  padding-bottom: 24rem;
+  /* margin-bottom: 26rem; */
 }
 
 .mb-0 {
@@ -158,23 +159,22 @@ header {
   scroll-margin-top: 20rem;
 }
 
-header .header__left {
+.header__left {
   max-width: 62rem;
   flex: 1;
 }
 
-header .header__left p {
+.header__left p {
   margin-top: 2rem;
   margin-bottom: 4rem;
   max-width: 62rem;
 }
 
-header .header__right .header__image {
+.header__image {
   position: relative;
-  line-height: 0;
 }
 
-header .header__right .header__image::after {
+.header__image::after {
   content: "";
   display: block;
   width: 100%;
@@ -183,21 +183,14 @@ header .header__right .header__image::after {
   position: absolute;
   top: -1.5rem;
   right: -1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 50%;
   z-index: -1;
 }
 
-header .header__right .header__image .profile {
-  border-radius: 0.5rem;
-  min-width: 25rem;
-  max-width: 100%;
-}
-
-header .header__right .header__image .background {
-  position: absolute;
-  top: -4rem;
-  right: -2.5rem;
-  z-index: -1;
+.profile {
+  border-radius: 50%;
+  width: 40rem;
+  height: 40rem;
 }
 
 /* About */
@@ -205,7 +198,7 @@ header .header__right .header__image .background {
   display: flex;
   justify-content: space-between;
   gap: 4rem;
-  scroll-margin-top: 20rem;
+  scroll-margin-top: 12rem;
 }
 
 .about__left {
@@ -247,7 +240,7 @@ header .header__right .header__image .background {
 /* Skills */
 .skills {
   background-color: var(--light-tertiary-color);
-  scroll-margin-top: 15rem;
+  scroll-margin-top: 8rem;
 }
 
 .skills__content {
@@ -288,7 +281,8 @@ header .header__right .header__image .background {
 /* Projects */
 .projects {
   margin-bottom: 16rem;
-  scroll-margin-top: 15rem;
+  padding: 5rem 0;
+  scroll-margin-top: 8rem;
 }
 
 .projects__content {
@@ -396,7 +390,7 @@ footer {
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5.2rem;
   }
 }
 
@@ -418,9 +412,8 @@ footer {
     align-items: center;
   }
 
-  .navbar__content img {
-    width: 3.6rem;
-    height: 3.6rem;
+  .logo_header {
+    width: 15rem;
     cursor: pointer;
   }
 
@@ -453,6 +446,9 @@ footer {
 
   .burguer {
     display: block;
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
   }
 
   header {
@@ -467,6 +463,8 @@ footer {
   .about {
     flex-direction: column;
     align-items: center;
+    padding: 8rem 0;
+    scroll-margin-top: 8rem;
   }
 
   .about__left {
@@ -476,6 +474,16 @@ footer {
 
   .about__right {
     text-align: center;
+  }
+
+  .skills {
+    padding: 5rem 0;
+    scroll-margin-top: 8rem;
+  }
+
+  .projects {
+    padding: 5rem 0;
+    scroll-margin-top: 8rem;
   }
 
   .projects ul li,
@@ -489,6 +497,11 @@ footer {
 
   .projects ul li .image img {
     min-width: auto;
+  }
+
+  footer {
+    padding: 5rem 0;
+    scroll-bottom-top: 8rem;
   }
 }
 
