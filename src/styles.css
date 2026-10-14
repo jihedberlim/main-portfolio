@@ -82,7 +82,7 @@
     @apply outline-2 outline-offset-2 outline-accent;
   }
 }
-
+ 
 .reveal {
   opacity: 0;
   transform: translateY(24px);
