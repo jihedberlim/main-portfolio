@@ -1,0 +1,86 @@
+<section id="home" class="relative isolate overflow-hidden pt-32 pb-24 sm:pt-40 lg:pb-32">
+  <div
+    aria-hidden="true"
+    class="bg-grid pointer-events-none absolute inset-0 -z-10 opacity-60 [mask-image:radial-gradient(ellipse_70%_60%_at_50%_0%,black,transparent)]"
+  ></div>
+  <div
+    aria-hidden="true"
+    class="pointer-events-none absolute -top-48 left-1/2 -z-10 size-[36rem] -translate-x-1/2 rounded-full bg-accent/20 blur-3xl"
+  ></div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
+    <div appReveal>
+      <p
+        class="inline-flex items-center gap-2 rounded-full border border-line bg-card/70 px-3 py-1.5 font-mono text-xs text-muted backdrop-blur"
+      >
+        <span class="relative flex size-2">
+          <span class="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60 motion-reduce:hidden"></span>
+          <span class="relative inline-flex size-2 rounded-full bg-accent"></span>
+        </span>
+        {{ t().hero.badge }}
+      </p>
+
+      <h1 class="mt-6 font-display text-5xl font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl">
+        {{ t().hero.greeting }}
+        <span class="text-accent">Jihed Berlim</span>.
+      </h1>
+
+      <p class="mt-5 font-display text-xl font-medium sm:text-2xl">
+        {{ t().hero.role }}
+        <span class="text-muted">· {{ t().hero.roleDetail }}</span>
+      </p>
+
+      <p class="mt-6 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
+        {{ t().hero.description }}
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-3">
+        <a
+          href="#projects"
+          class="group inline-flex items-center gap-2 rounded-full bg-fg px-6 py-3 text-sm font-semibold text-surface transition-colors hover:bg-accent hover:text-on-accent"
+        >
+          {{ t().hero.ctaPrimary }}
+          <app-icon name="arrow-right" class="size-4 transition-transform group-hover:translate-x-0.5" />
+        </a>
+        <a
+          href="#contact"
+          class="inline-flex items-center gap-2 rounded-full border border-line bg-card/70 px-6 py-3 text-sm font-semibold transition-colors hover:border-accent hover:text-accent"
+        >
+          {{ t().hero.ctaSecondary }}
+        </a>
+      </div>
+
+      <app-social-links class="mt-10 block" />
+    </div>
+
+    <div appReveal [appRevealDelay]="150" class="relative mx-auto w-full max-w-sm lg:max-w-md">
+      <div
+        aria-hidden="true"
+        class="absolute inset-0 rotate-6 rounded-[2.5rem] border border-accent/30 bg-accent-soft"
+      ></div>
+      <div class="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] border border-line bg-card shadow-2xl shadow-black/10">
+        <img
+          ngSrc="images/profile.png"
+          fill
+          priority
+          sizes="(min-width: 1024px) 28rem, 24rem"
+          class="object-cover object-[50%_35%]"
+          [alt]="t().hero.photoAlt"
+        />
+      </div>
+
+      <div
+        class="absolute -left-3 bottom-10 rounded-2xl border border-line bg-card/90 px-4 py-3 shadow-lg backdrop-blur sm:-left-8"
+      >
+        <p class="font-mono text-[11px] tracking-wider text-muted uppercase">Front-end</p>
+        <p class="mt-0.5 text-sm font-semibold">Angular · TypeScript</p>
+      </div>
+      <div
+        class="absolute -right-3 top-10 rounded-2xl border border-line bg-card/90 px-4 py-3 shadow-lg backdrop-blur sm:-right-8"
+      >
+        <p class="font-mono text-[11px] tracking-wider text-muted uppercase">Back-end</p>
+        <p class="mt-0.5 text-sm font-semibold">Java · Spring Boot</p>
+      </div>
+    </div>
+  </div>
+</section>

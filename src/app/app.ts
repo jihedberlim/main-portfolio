@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { I18nService } from './core/i18n.service';
+import { Hero } from './sections/hero/hero';
 import { Navbar } from './sections/navbar/navbar';
 
 @Component({
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Navbar],
+  imports: [Navbar, Hero],
   templateUrl: './app.html',
 })
 export class App {
