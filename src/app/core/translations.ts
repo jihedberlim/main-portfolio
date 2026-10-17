@@ -35,6 +35,29 @@ const pt = {
     ctaSecondary: 'Fale comigo',
     photoAlt: 'Foto de Jihed Berlim sorrindo em um evento à noite, com uma roda-gigante iluminada ao fundo',
   },
+  about: {
+    eyebrow: 'Sobre',
+    title: 'Quem sou eu?',
+    lead: 'Desenvolvedor júnior entusiasta da tecnologia e de inovações.',
+    paragraphs: [
+      'Me chamo Jihed Elmograbi Berlim, um desenvolvedor júnior atraído por tecnologia e inovações. Ao longo da minha jornada, venho desenvolvendo projetos pessoais práticos com diferentes tecnologias do ecossistema web, com o objetivo de adquirir conhecimento para criar soluções que atendam às necessidades reais dos usuários.',
+      'Estou constantemente estudando, me atualizando e buscando novas formas de resolver problemas de maneira criativa e eficiente, com o objetivo de crescer profissionalmente e contribuir de forma significativa em um time de desenvolvimento.',
+    ],
+    focus: [
+      {
+        title: 'Front-end',
+        text: 'Interfaces responsivas e acessíveis com Angular, TypeScript e Tailwind CSS.',
+      },
+      {
+        title: 'Back-end',
+        text: 'Regras de negócio e APIs com Java e Spring Boot.',
+      },
+      {
+        title: 'Aprendizado contínuo',
+        text: 'Sempre estudando novas tecnologias e boas práticas de desenvolvimento.',
+      },
+    ],
+  },
   contact: {
     whatsappMessage: 'Olá, Jihed! Tudo bem? Estava navegando pelo seu portfólio e gostaria de entrar em contato com você.',
   },
@@ -74,6 +97,29 @@ const en: Translations = {
     ctaPrimary: 'View projects',
     ctaSecondary: 'Get in touch',
     photoAlt: 'Photo of Jihed Berlim smiling at a night event, with a lit Ferris wheel in the background',
+  },
+  about: {
+    eyebrow: 'About',
+    title: 'Who am I?',
+    lead: 'Junior developer passionate about technology and innovation.',
+    paragraphs: [
+      "My name is Jihed Elmograbi Berlim, a junior developer drawn to technology and innovation. Along my journey I've been building hands-on personal projects with different web technologies, aiming to gain the knowledge to create solutions that meet users' real needs.",
+      "I'm constantly studying, keeping up to date and looking for creative, efficient ways to solve problems, so I can grow professionally and make a meaningful contribution to a development team.",
+    ],
+    focus: [
+      {
+        title: 'Front-end',
+        text: 'Responsive, accessible interfaces with Angular, TypeScript and Tailwind CSS.',
+      },
+      {
+        title: 'Back-end',
+        text: 'Business logic and APIs with Java and Spring Boot.',
+      },
+      {
+        title: 'Always learning',
+        text: 'Continuously studying new technologies and development best practices.',
+      },
+    ],
   },
   contact: {
     whatsappMessage: 'Hi Jihed! How are you? I was browsing your portfolio and would like to get in touch with you.',
