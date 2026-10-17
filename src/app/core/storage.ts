@@ -10,6 +10,6 @@ export function writeStorage(key: string, value: string): void {
   try {
     localStorage.setItem(key, value);
   } catch {
-    
+    // Storage can be blocked (private mode, disabled cookies): the preference just isn't saved.
   }
 }
