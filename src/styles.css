@@ -57,13 +57,6 @@
   }
 }
 
-@utility bg-grid {
-  background-image:
-    linear-gradient(to right, var(--line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
-  background-size: 56px 56px;
-}
-
 @layer base {
   html {
     scroll-behavior: smooth;
