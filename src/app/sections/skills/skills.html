@@ -1,0 +1,72 @@
+<section id="skills" class="scroll-mt-16 border-t border-line bg-surface-2 py-24 sm:py-32">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <app-section-heading
+      [eyebrow]="t().skills.eyebrow"
+      [title]="t().skills.title"
+      [description]="t().skills.description"
+    />
+  </div>
+
+  <div
+    appReveal
+    class="group mt-14 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]"
+  >
+    <ul
+      class="flex w-max animate-marquee gap-4 pr-4 group-hover:[animation-play-state:paused] motion-reduce:w-auto motion-reduce:animate-none motion-reduce:flex-wrap motion-reduce:justify-center motion-reduce:px-4"
+    >
+      @for (copy of [0, 1]; track copy) {
+        @for (skill of skills; track skill.name) {
+          <li
+            [attr.aria-hidden]="copy === 1 ? 'true' : null"
+            [class.motion-reduce:hidden]="copy === 1"
+            [style.--tech]="skill.color"
+            class="flex items-center gap-3 rounded-2xl border border-line bg-card px-5 py-3.5 transition-colors hover:border-[var(--tech)]"
+          >
+            <img
+              [src]="'skills/' + skill.icon + '.svg'"
+              alt=""
+              width="28"
+              height="28"
+              loading="lazy"
+              class="size-7"
+              [class.dark:invert]="skill.invertOnDark"
+            />
+            <span class="font-medium whitespace-nowrap">{{ skill.name }}</span>
+          </li>
+        }
+      }
+    </ul>
+  </div>
+
+  <div class="mx-auto mt-14 grid max-w-6xl gap-4 px-4 sm:px-6 md:grid-cols-3">
+    @for (group of groups; track group.category; let i = $index) {
+      <article appReveal [appRevealDelay]="i * 100" class="rounded-3xl border border-line bg-card p-6 sm:p-7">
+        <header class="flex items-center gap-3">
+          <span class="grid size-10 place-items-center rounded-xl bg-accent-soft text-accent">
+            <app-icon [name]="group.icon" class="size-5" />
+          </span>
+          <h3 class="font-display text-lg font-semibold">{{ t().skills.categories[group.category] }}</h3>
+        </header>
+        <ul class="mt-6 flex flex-wrap gap-2">
+          @for (skill of group.items; track skill.name) {
+            <li
+              [style.--tech]="skill.color"
+              class="inline-flex items-center gap-2 rounded-full border border-line px-3 py-1.5 text-sm transition-colors hover:border-[var(--tech)]"
+            >
+              <img
+                [src]="'skills/' + skill.icon + '.svg'"
+                alt=""
+                width="18"
+                height="18"
+                loading="lazy"
+                class="size-[18px]"
+                [class.dark:invert]="skill.invertOnDark"
+              />
+              {{ skill.name }}
+            </li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>

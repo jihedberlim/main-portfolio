@@ -58,6 +58,16 @@ const pt = {
       },
     },
   },
+  skills: {
+    eyebrow: 'Habilidades',
+    title: 'Minha caixa de ferramentas',
+    description: 'Tecnologias e ferramentas que utilizo e nas quais continuo me aprofundando.',
+    categories: {
+      frontend: 'Front-end',
+      backend: 'Back-end',
+      tools: 'Ferramentas',
+    },
+  },
   contact: {
     whatsappMessage: 'Olá, Jihed! Tudo bem? Estava navegando pelo seu portfólio e gostaria de entrar em contato com você.',
   },
@@ -119,6 +129,16 @@ const en: Translations = {
         title: 'Always learning',
         text: 'Continuously studying new technologies and development best practices.',
       },
+    },
+  },
+  skills: {
+    eyebrow: 'Skills',
+    title: 'My toolbox',
+    description: 'Technologies and tools I use and keep going deeper into.',
+    categories: {
+      frontend: 'Front-end',
+      backend: 'Back-end',
+      tools: 'Tools',
     },
   },
   contact: {
