@@ -43,20 +43,20 @@ const pt = {
       'Me chamo Jihed Elmograbi Berlim, um desenvolvedor júnior atraído por tecnologia e inovações. Ao longo da minha jornada, venho desenvolvendo projetos pessoais práticos com diferentes tecnologias do ecossistema web, com o objetivo de adquirir conhecimento para criar soluções que atendam às necessidades reais dos usuários.',
       'Estou constantemente estudando, me atualizando e buscando novas formas de resolver problemas de maneira criativa e eficiente, com o objetivo de crescer profissionalmente e contribuir de forma significativa em um time de desenvolvimento.',
     ],
-    focus: [
-      {
+    focus: {
+      frontend: {
         title: 'Front-end',
         text: 'Interfaces responsivas e acessíveis com Angular, TypeScript e Tailwind CSS.',
       },
-      {
+      backend: {
         title: 'Back-end',
         text: 'Regras de negócio e APIs com Java e Spring Boot.',
       },
-      {
+      learning: {
         title: 'Aprendizado contínuo',
         text: 'Sempre estudando novas tecnologias e boas práticas de desenvolvimento.',
       },
-    ],
+    },
   },
   contact: {
     whatsappMessage: 'Olá, Jihed! Tudo bem? Estava navegando pelo seu portfólio e gostaria de entrar em contato com você.',
@@ -106,20 +106,20 @@ const en: Translations = {
       "My name is Jihed Elmograbi Berlim, a junior developer drawn to technology and innovation. Along my journey I've been building hands-on personal projects with different web technologies, aiming to gain the knowledge to create solutions that meet users' real needs.",
       "I'm constantly studying, keeping up to date and looking for creative, efficient ways to solve problems, so I can grow professionally and make a meaningful contribution to a development team.",
     ],
-    focus: [
-      {
+    focus: {
+      frontend: {
         title: 'Front-end',
         text: 'Responsive, accessible interfaces with Angular, TypeScript and Tailwind CSS.',
       },
-      {
+      backend: {
         title: 'Back-end',
         text: 'Business logic and APIs with Java and Spring Boot.',
       },
-      {
+      learning: {
         title: 'Always learning',
         text: 'Continuously studying new technologies and development best practices.',
       },
-    ],
+    },
   },
   contact: {
     whatsappMessage: 'Hi Jihed! How are you? I was browsing your portfolio and would like to get in touch with you.',

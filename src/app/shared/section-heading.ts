@@ -8,8 +8,6 @@ import { Reveal } from './reveal';
   template: `
     <div appReveal class="max-w-2xl">
       <p class="flex items-center gap-3 font-mono text-xs tracking-widest text-accent uppercase">
-        <span>{{ index() }}</span>
-        <span class="h-px w-8 bg-accent/50"></span>
         <span>{{ eyebrow() }}</span>
       </p>
       <h2
@@ -24,7 +22,6 @@ import { Reveal } from './reveal';
   `,
 })
 export class SectionHeading {
-  readonly index = input.required<string>();
   readonly eyebrow = input.required<string>();
   readonly title = input.required<string>();
   readonly description = input<string>();
