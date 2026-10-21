@@ -68,6 +68,14 @@ const pt = {
       tools: 'Ferramentas',
     },
   },
+  projects: {
+    eyebrow: 'Projetos',
+    title: 'Projetos em destaque',
+    description: 'Alguns dos trabalhos que desenvolvi para estudar e praticar.',
+    code: 'Código',
+    demo: 'Ver online',
+    more: 'Ver mais projetos no GitHub',
+  },
   contact: {
     whatsappMessage: 'Olá, Jihed! Tudo bem? Estava navegando pelo seu portfólio e gostaria de entrar em contato com você.',
   },
@@ -140,6 +148,14 @@ const en: Translations = {
       backend: 'Back-end',
       tools: 'Tools',
     },
+  },
+  projects: {
+    eyebrow: 'Projects',
+    title: 'Featured projects',
+    description: "Some of the work I've built to study and practice.",
+    code: 'Code',
+    demo: 'Live demo',
+    more: 'See more projects on GitHub',
   },
   contact: {
     whatsappMessage: 'Hi Jihed! How are you? I was browsing your portfolio and would like to get in touch with you.',
