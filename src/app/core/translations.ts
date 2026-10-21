@@ -77,7 +77,16 @@ const pt = {
     more: 'Ver mais projetos no GitHub',
   },
   contact: {
+    eyebrow: 'Contato',
+    title: 'Vamos conversar?',
+    description:
+      'Tem uma oportunidade, um projeto ou só quer trocar uma ideia? Me mande uma mensagem pelo canal que preferir.',
+    copy: 'Copiar e-mail',
+    copied: 'E-mail copiado!',
     whatsappMessage: 'Olá, Jihed! Tudo bem? Estava navegando pelo seu portfólio e gostaria de entrar em contato com você.',
+    rights: 'Todos os direitos reservados.',
+    builtWith: 'Feito com Angular, TypeScript e Tailwind CSS.',
+    backToTop: 'Voltar ao topo',
   },
 };
 
@@ -158,7 +167,16 @@ const en: Translations = {
     more: 'See more projects on GitHub',
   },
   contact: {
+    eyebrow: 'Contact',
+    title: "Let's talk?",
+    description:
+      'Have an opportunity, a project, or just want to chat? Send me a message on whichever channel you prefer.',
+    copy: 'Copy email',
+    copied: 'Email copied!',
     whatsappMessage: 'Hi Jihed! How are you? I was browsing your portfolio and would like to get in touch with you.',
+    rights: 'All rights reserved.',
+    builtWith: 'Built with Angular, TypeScript and Tailwind CSS.',
+    backToTop: 'Back to top',
   },
 };
 

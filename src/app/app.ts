@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { I18nService } from './core/i18n.service';
 import { About } from './sections/about/about';
+import { Contact } from './sections/contact/contact';
 import { Hero } from './sections/hero/hero';
 import { Navbar } from './sections/navbar/navbar';
 import { Projects } from './sections/projects/projects';
@@ -9,7 +10,7 @@ import { Skills } from './sections/skills/skills';
 @Component({
   selector: 'app-root',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Navbar, Hero, About, Skills, Projects],
+  imports: [Navbar, Hero, About, Skills, Projects, Contact],
   templateUrl: './app.html',
 })
 export class App {
