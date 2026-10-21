@@ -1,0 +1,34 @@
+<section id="about" class="scroll-mt-16 border-t border-line py-24 sm:py-32">
+  <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16">
+    <div class="lg:col-span-5">
+      <app-section-heading [eyebrow]="t().about.eyebrow" [title]="t().about.title" />
+      <p appReveal class="mt-6 font-display text-xl font-medium text-balance text-accent sm:text-2xl">
+        {{ t().about.lead }}
+      </p>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div appReveal [appRevealDelay]="100" class="space-y-5 text-base leading-relaxed text-muted sm:text-lg">
+        @for (paragraph of t().about.paragraphs; track $index) {
+          <p>{{ paragraph }}</p>
+        }
+      </div>
+
+      <ul class="mt-12 grid gap-4 sm:grid-cols-3">
+        @for (item of focusItems; track item.key) {
+          <li
+            appReveal
+            [appRevealDelay]="150 + $index * 100"
+            class="rounded-3xl border border-line bg-card p-6 transition-colors hover:border-accent/60"
+          >
+            <span class="grid size-10 place-items-center rounded-xl bg-accent-soft text-accent">
+              <app-icon [name]="item.icon" class="size-5" />
+            </span>
+            <h3 class="mt-5 font-display text-lg font-semibold">{{ t().about.focus[item.key].title }}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">{{ t().about.focus[item.key].text }}</p>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</section>
